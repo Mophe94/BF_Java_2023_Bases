@@ -1,4 +1,4 @@
-package be.Bajeux;
+package be.Bajeux.exercices;
 
 import java.util.Scanner;
 
