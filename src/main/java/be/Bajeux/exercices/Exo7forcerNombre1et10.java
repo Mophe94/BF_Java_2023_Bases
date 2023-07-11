@@ -2,7 +2,7 @@ package be.Bajeux.exercices;
 
 import java.util.Scanner;
 
-public class ExoforcerNombre1et10 {
+public class Exo7forcerNombre1et10 {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);

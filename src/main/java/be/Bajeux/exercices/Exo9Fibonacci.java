@@ -2,7 +2,7 @@ package be.Bajeux.exercices;
 
 import java.util.Scanner;
 
-public class Exo9Fiboacci {
+public class Exo9Fibonacci {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
