@@ -1,32 +1,40 @@
 package be.Bajeux.demos;
-// exemple de creation d'une saisie utilisateur (input)
+
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.Scanner;
 
 public class DemoInput {
 
     public static void main(String[] args) {
 
-        Scanner scan = new Scanner(System.in);//system.in  sert a dire qu'on va scanner quelque chose qu'on va rentrer au clavier
-        System.out.print("");//difference entre un print et un println le print ne va pas a la ligne
 
-//        System.out.print(("jour : "));
-//        int day  =  scan.nextInt();
+//        System.out.print("Jour : ");
+//        int day = scan.nextInt();
 //        System.out.print("Mois : ");
 //        String month = scan.next();
 //        System.out.print("Année : ");
-//        long years =  scan.nextLong();
+//        long year = scan.nextLong();
 
-        System.out.print(("jour : "));
-        int day  =  scan.nextInt();// input d'un int
+        Scanner scan = new Scanner(System.in);
+
+        // Création d'une instance de Scanner pour la saisie utilisateur
+
+        System.out.print("Jour : ");
+        int day = scan.nextInt();
         System.out.print("Mois : ");
-        String month = scan.next();//input d'un String
+        int month = scan.nextInt();
         System.out.print("Année : ");
-        long year = scan.nextLong();// input d'un long
+        int year = scan.nextInt();
 
-        LocalDate date = LocalDate.of(4,4,1994);//declaration qui permet
+        // Saisie de jour, mois et année à partir de la console
+
+        LocalDate date = LocalDate.of(year, month, day);
+
+        // Création d'une instance de LocalDate avec les valeurs saisies
 
         System.out.println(date);
-        System.out.print(day+" "+month+ " "+ year);
+        System.out.println(day + " " + month + " " + year);
     }
 }

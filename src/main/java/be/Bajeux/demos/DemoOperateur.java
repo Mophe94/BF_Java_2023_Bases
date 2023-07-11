@@ -4,25 +4,27 @@ public class DemoOperateur {
 
     public static void main(String[] args) {
 
-        int nb1 = 5, nb2 =3 ,result;
-        // add
+        // Déclaration des variables nb1 et nb2, et initialisation avec les valeurs 5 et 2 respectivement
+        int nb1 = 5, nb2 = 2, result;
+
+        // Addition
         result = nb1 + nb2;
         System.out.println(nb1 + " + " + nb2 + " = " + result);
-        //soutraction
+
+        // Soustraction
         result = nb1 - nb2;
         System.out.println(nb1 + " - " + nb2 + " = " + result);
-        //multiplication
+
+        // Multiplication
         result = nb1 * nb2;
-        System.out.println(nb1 + " * " + nb2 + " = " + result);
-        //division
-        result = nb1 / nb2;
-        System.out.println(nb1 + " / " + nb2 + " = " + result);
-        //reste modulo
+        System.out.println(nb1 + " X " + nb2 + " = " + result);
+
+        // Division
+        double res = (double) nb1 / nb2;
+        System.out.println(nb1 + " / " + nb2 + " = " + res);
+
+        // Modulo
         result = nb1 % nb2;
-        System.out.println(nb1 + " / " + nb2 + " = " + result);
-
-
-
+        System.out.println(nb1 + " % " + nb2 + " = " + result);
     }
-
 }
