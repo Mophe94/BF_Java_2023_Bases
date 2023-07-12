@@ -8,13 +8,14 @@ public class Exo11NombrePremier {
         Scanner scan = new Scanner(System.in);
 
         int longeur = scan.nextInt();
-        int decroissant = longeur;
-        for (int i = 1; i < longeur; i++) {
-            while (decroissant > 0 ){
-                if (i % decroissant == 0){
-                    System.out.println(i);
+        int nbElements = 0;
+        for (int i = 2; nbElements < longeur; i++) {
+            int j ;
+            for ( j = 2; i % j !=0 ; j++){
                 }
-                decroissant--;
+            if (j == i){
+                System.out.println(i);
+                nbElements++;
             }
         }
     }

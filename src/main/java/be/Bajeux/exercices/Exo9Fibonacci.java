@@ -1,20 +1,27 @@
 package be.Bajeux.exercices;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Exo9Fibonacci {
+
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
 
-        int longueur = scan.nextInt();
-        int result;
-        int nb1 = 0;
-        int nb2 = 1;
-        for (int i = 0; i < longueur; i++) {
-            result = nb1 + (nb2 - nb1);
-            System.out.println(result);
-            nb1 = result;
+        System.out.println("Combien de nombre de la suite de fibonacci voulez vous ?");
+        int length = scan.nextInt();
+
+        int first = 0;
+        int second = 1;
+        int temp;
+
+        for(int i = 0; i < length; i++){
+
+            System.out.print(first + " | ");
+            temp = first + second;
+            first = second;
+            second = temp;
         }
     }
 }
