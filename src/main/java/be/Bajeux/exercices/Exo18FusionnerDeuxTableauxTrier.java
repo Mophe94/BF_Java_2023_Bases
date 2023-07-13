@@ -41,7 +41,10 @@ public class Exo18FusionnerDeuxTableauxTrier {
                 }
             }
 
-        for (int j = 0; j < tabResult.length; j++) {
+
+    }
+
+        System.out.println('\n'+"tableaux trier");for (int j = 0; j < tabResult.length; j++) {
             int index = j;
             int nextIndex = index + 1;
             if (tab2s[i] >= tabResult[index] && tab2s[i] <= tabResult[nextIndex]) {
@@ -52,9 +55,6 @@ public class Exo18FusionnerDeuxTableauxTrier {
                 }
             }
         }
-    }
-
-        System.out.println('\n'+"tableaux trier");
         for(
     int result :tabResult)
 
